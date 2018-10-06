@@ -1,8 +1,10 @@
-package com.abhijitmitkar.todo;
+package com.abhijitmitkar.todo.home;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+
+import com.abhijitmitkar.todo.R;
 
 public class HomeActivity extends AppCompatActivity {
 
