@@ -5,13 +5,22 @@ import com.abhijitmitkar.todo.common.BaseView;
 
 public interface HomeContract {
 
-    public interface View extends BaseView {
+    interface View extends BaseView<Presenter> {
+
+        void populateTasks();
+        void refreshTasks();
+        void notifyUser(String message);
         
     }
 
-    public interface Presenter extends BasePresenter {
-        
-    }
+    interface Presenter extends BasePresenter {
 
+        void fetchTasks();
+        void addTask();
+        void deleteTask();
+        void markDone(boolean isDone);
+        void openTaskDetail(String taskId);
+
+    }
 
 }
